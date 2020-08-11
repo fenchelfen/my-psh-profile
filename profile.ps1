@@ -1,5 +1,10 @@
+# my variables
 $env:pshrc="C:\Users\ff\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 $env:pshprofile="C:\Users\ff\Documents\WindowsPowerShell\profile.ps1"
+
+
 $env:PATH+=";C:\Program Files\Git\bin"
-$env:vcvars12="C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat"
-$env:vcvars19="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat"
+
+
+# my scripts
+$env:PATH+=";C:\Users\ff\Documents\WindowsPowerShell\scripts\"
