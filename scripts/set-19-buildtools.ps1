@@ -1,9 +1,9 @@
 # setting 19th build tools envs
 
-$vcvarspath="C:\Program Files (x86)\Microsoft Visual Studio 12.0"
+$vcvarspath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build"
 
 
-cmd.exe /c "call `"$vcvarspath\VC\bin\amd64\vcvars64.bat`" && set > %temp%\vcvars.txt"
+cmd.exe /c "call `"$vcvarspath\vcvars64.bat`" && set > %temp%\vcvars.txt"
 
 Get-Content "$env:temp\vcvars.txt" | Foreach-Object {
 	if ($_ -match "^(.*?)=(.*)$") {
